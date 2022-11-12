@@ -1,0 +1,48 @@
+{
+	"name": "@example/basics",
+	"type": "module",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"lint-staged": "lint-staged",
+		"postinstall": "husky install",
+		"lint": "eslint --ext .ts,.js,.astro,.vue . --ignore-path .gitignore",
+		"fix": "eslint --ext .ts,.js,.astro,.vue . --ignore-path .gitignore --fix"
+	},
+	"dependencies": {
+		"@astrojs/netlify": "^1.2.1",
+		"@astrojs/tailwind": "^2.1.2",
+		"@astrojs/vue": "^1.2.1",
+		"astro": "^1.6.7",
+		"tailwindcss": "^3.0.24",
+		"vue": "^3.2.30"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.0.0-0",
+		"@typescript-eslint/eslint-plugin": "^5.42.1",
+		"@typescript-eslint/parser": "^5.42.1",
+		"astro-eslint-parser": "^0.9.0",
+		"eslint": "^8.27.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-astro": "^0.21.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-security": "^1.5.0",
+		"eslint-plugin-vue": "^9.7.0",
+		"husky": "^8.0.2",
+		"lint-staged": "^13.0.3",
+		"prettier": "^2.7.1",
+		"prettier-plugin-astro": "^0.7.0",
+		"typescript": "^4.8.4",
+		"vite": ">=3.0.0 <4.0.0"
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx,astro,json,md}": [
+			"prettier --write --plugin-search-dir=."
+		]
+	}
+}
