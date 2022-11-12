@@ -46,7 +46,7 @@
 		"vue-eslint-parser": "^9.1.0"
 	},
 	"lint-staged": {
-		"*.{js,jsx,ts,tsx,astro,json,md}": [
+		"*.{js,jsx,ts,tsx,astro,vue,json,md}": [
 			"prettier --write --plugin-search-dir=."
 		]
 	}
