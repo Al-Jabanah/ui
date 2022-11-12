@@ -5,6 +5,10 @@ specifiers:
   '@astrojs/tailwind': ^2.1.2
   '@astrojs/vue': ^1.2.1
   '@babel/core': ^7.0.0-0
+  '@headlessui/vue': ^1.7.4
+  '@heroicons/vue': ^2.0.13
+  '@tailwindcss/aspect-ratio': ^0.4.2
+  '@tailwindcss/forms': ^0.5.3
   '@typescript-eslint/eslint-plugin': ^5.42.1
   '@typescript-eslint/parser': ^5.42.1
   astro: ^1.6.7
@@ -23,11 +27,16 @@ specifiers:
   typescript: ^4.8.4
   vite: '>=3.0.0 <4.0.0'
   vue: ^3.2.30
+  vue-eslint-parser: ^9.1.0
 
 dependencies:
   '@astrojs/netlify': 1.2.1
   '@astrojs/tailwind': 2.1.2_tailwindcss@3.2.4
   '@astrojs/vue': 1.2.1_pskjd6ywq3nhqrsxpncsuo4wqi
+  '@headlessui/vue': 1.7.4_vue@3.2.45
+  '@heroicons/vue': 2.0.13_vue@3.2.45
+  '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.4
+  '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.4
   astro: 1.6.7
   tailwindcss: 3.2.4
   vue: 3.2.45
@@ -49,6 +58,7 @@ devDependencies:
   prettier-plugin-astro: 0.7.0
   typescript: 4.8.4
   vite: 3.2.3
+  vue-eslint-parser: 9.1.0_eslint@8.27.0
 
 packages:
 
@@ -525,6 +535,23 @@ packages:
       - supports-color
     dev: true
 
+  /@headlessui/vue/1.7.4_vue@3.2.45:
+    resolution: {integrity: sha512-QHRlKCK/zRpjSjhth7c2CZvx5eMDFflXauqRdRJgp1CwScx6PwCpWiwDsjQcYM4z8Yik2ZvyX8W4PFT2Wsqqyw==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      vue: 3.2.45
+    dev: false
+
+  /@heroicons/vue/2.0.13_vue@3.2.45:
+    resolution: {integrity: sha512-vVCVF02+rNKXEmanVNnmktJlxCbOn0qVFP1gfZPn4bcBIwPX3h9AVHGCkwly+IWDEME8w5oooG0KRd2hhSe/HQ==}
+    peerDependencies:
+      vue: '>= 3'
+    dependencies:
+      vue: 3.2.45
+    dev: false
+
   /@humanwhocodes/config-array/0.11.7:
     resolution: {integrity: sha512-kBbPWzN8oVMLb0hOUYXhmxggL/1cJE6ydvjDIGi9EnAGUyA7cLVKQg+d/Dsm+KZwx2czGHrCmMVLiyg8s5JPKw==}
     engines: {node: '>=10.10.0'}
@@ -628,6 +655,23 @@ packages:
     dependencies:
       '@proload/core': 0.3.3
       tsm: 2.2.2
+    dev: false
+
+  /@tailwindcss/aspect-ratio/0.4.2_tailwindcss@3.2.4:
+    resolution: {integrity: sha512-8QPrypskfBa7QIMuKHg2TA7BqES6vhBrDLOv8Unb6FcFyd3TjKbc6lcmb9UPQHxfl24sXoJ41ux/H7qQQvfaSQ==}
+    peerDependencies:
+      tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
+    dependencies:
+      tailwindcss: 3.2.4
+    dev: false
+
+  /@tailwindcss/forms/0.5.3_tailwindcss@3.2.4:
+    resolution: {integrity: sha512-y5mb86JUoiUgBjY/o6FJSFZSEttfb3Q5gllE4xoKjAAD+vBrnIhE4dViwUuow3va8mpH4s9jyUbUbrRGoRdc2Q==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
+    dependencies:
+      mini-svg-data-uri: 1.4.4
+      tailwindcss: 3.2.4
     dev: false
 
   /@types/acorn/4.0.6:
@@ -3509,6 +3553,11 @@ packages:
   /mimic-fn/4.0.0:
     resolution: {integrity: sha512-vqiC06CuhBTUdZH+RYl8sFrL096vA45Ok5ISO6sE/Mr1jRbGH4Csnhi8f3wKVl7x8mO4Au7Ir9D3Oyv1VYMFJw==}
     engines: {node: '>=12'}
+
+  /mini-svg-data-uri/1.4.4:
+    resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==}
+    hasBin: true
+    dev: false
 
   /minimatch/3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
