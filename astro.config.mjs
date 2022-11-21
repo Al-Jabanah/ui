@@ -11,6 +11,7 @@ import netlify from '@astrojs/netlify/functions';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://aljabanah.com/',
 	integrations: [tailwind(), vue()],
 	output: 'server',
 	adapter: netlify(),
